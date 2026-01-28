@@ -1,0 +1,54 @@
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner-img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 2;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.search-bar form{
+    display: flex;
+    width: 100%;
+}
+
+.search-bar input{
+    flex: 1;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-btn{
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #e50914;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0 8px 8px 0;
+}
+
+

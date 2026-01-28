@@ -1,0 +1,106 @@
+/* Reset basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navbar fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.9), transparent);
+    z-index: 100;
+}
+
+/* Footer fixed at the bottom */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 4%;
+    background-color: #111;
+    text-align: center;
+    color: gray;
+    z-index: 100;
+}
+
+/* Main container for Movies page */
+.movies-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full viewport height */
+    padding-top: 100px; /* leave space for navbar */
+    padding-bottom: 60px; /* leave space for footer */
+    box-sizing: border-box;
+}
+
+/* Search bar styling */
+.movies-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.movies-search form {
+    display: flex;
+    gap: 10px;
+}
+
+.movies-search input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.movies-search button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movies-search button:hover {
+    background-color: #b0060f;
+}
+
+/* Movie list grid */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    width: 90%;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-card h3{
+    font-weight: 500;
+}
+
+.movie-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+

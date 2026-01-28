@@ -1,0 +1,22 @@
+.movie-details {
+  padding: 120px 6% 40px;
+  color: white;
+}
+
+.movie-details-container {
+  display: flex;
+  gap: 40px;
+}
+
+.movie-details img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.movie-info h1 {
+  margin-bottom: 16px;
+}
+
+.movie-info p{
+    margin: 20px 0;
+}
