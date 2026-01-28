@@ -60,6 +60,70 @@
     border-radius: 12px;
 }
 
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 4%;
+  }
+
+  .navbar-left {
+    gap: 30px;
+  }
+
+  .navbar-left img {
+    width: 75px;
+  }
+
+  .navbar-left ul {
+    gap: 14px;
+  }
+
+  .navbar-left ul li {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 14px 5%;
+  }
+
+  .navbar-left {
+    gap: 16px;
+  }
+
+  .navbar-left img {
+    width: 65px;
+  }
+
+ 
+  .navbar-left ul {
+    display: none;
+  }
+
+  .icon {
+    font-size: 26px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 12px 4%;
+  }
+
+  .navbar-left img {
+    width: 58px;
+  }
+
+  .icon {
+    font-size: 24px;
+    border-radius: 8px;
+  }
+}
 
 
 

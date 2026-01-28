@@ -1,4 +1,3 @@
-/* Base skeleton styles */
 .skeleton {
   background-color: #222;
   border-radius: 8px;
@@ -6,7 +5,7 @@
   overflow: hidden;
 }
 
-/* Shimmer effect */
+
 .skeleton::after {
   content: "";
   position: absolute;
@@ -27,17 +26,17 @@
   }
 }
 
-/* Movie card skeleton */
+
 .movie-card.skeleton {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%; /* grid defines width */
+  width: 100%; 
 }
 
 .skeleton-img {
   width: 100%;
-  padding-top: 150%; /* same aspect ratio as movie poster */
+  padding-top: 150%; 
   border-radius: 8px;
   background-color: #333;
 }
@@ -56,7 +55,7 @@
   border-radius: 4px;
 }
 
-/* Optional: movie details skeleton */
+
 .movie-details-container.skeleton {
   display: flex;
   gap: 20px;
@@ -88,3 +87,84 @@
 .skeleton-text.long {
   width: 100%;
 }
+
+@media (max-width: 900px) {
+  .movie-details-container.skeleton {
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .skeleton-poster {
+    width: 200px;
+    height: 300px;
+  }
+
+  .skeleton-title {
+    height: 15px;
+  }
+
+  .skeleton-text {
+    height: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .movie-details-container.skeleton {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skeleton-poster {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .movie-info {
+    width: 100%;
+  }
+
+  .skeleton-title {
+    width: 60%;
+    height: 14px;
+  }
+
+  .skeleton-text {
+    height: 14px;
+  }
+
+
+  .movie-card.skeleton {
+    gap: 8px;
+  }
+
+  .skeleton-img {
+    padding-top: 145%;
+  }
+}
+
+@media (max-width: 400px) {
+  .skeleton-poster {
+    width: 85%;
+  }
+
+  .skeleton-title {
+    height: 13px;
+  }
+
+  .skeleton-year {
+    height: 12px;
+  }
+
+  .skeleton-text {
+    height: 13px;
+  }
+
+  .skeleton-img {
+    padding-top: 140%;
+  }
+}
+
+
